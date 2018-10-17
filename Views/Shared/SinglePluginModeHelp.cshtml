@@ -1,0 +1,12 @@
+<p>Talk about app here.
+</p>
+
+<div style="text-align:center;">
+	<button class="button button-primary openApp">Get Started</button>
+</div>	
+
+<script>
+	$(".openApp").click(function(c){
+		$(c.currentTarget).parent().parent().parent().find(".button-link").trigger("click")
+	})
+</script>
